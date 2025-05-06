@@ -6,17 +6,7 @@
     <title>The Team - Collaborative Canvas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .team-member img {
-            width: 10rem; /* Fluid width */
-            height: 10rem;
-            object-fit: cover;
-        }
-        .social-links .bi {
-            font-size: 1.2rem; /* Responsive by default */
-        }
-    </style>
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
@@ -36,10 +26,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="approach.html">Approach</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="features.html">Features</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="realtime-collaboration.html">Real-time Collaboration</a></li>
+                            <li><a class="dropdown-item" href="interactive-whiteboard.html">Interactive Whiteboard</a></li>
+                            <li><a class="dropdown-item" href="version-history.html">Version History</a></li>
+                            <li><a class="dropdown-item" href="feedback-tools.html">Feedback Tools</a></li>
+                            <li><a class="dropdown-item" href="features.html">All Features</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="team.html">Team</a>
                     </li>
                     <li class="nav-item">
@@ -53,22 +52,22 @@
     <div class="container mt-5 py-5">
         <section class="py-5 bg-white">
             <div class="container">
-                <h2 class="text-center mb-4 text-info fw-bold">Meet the Collaborative Canvas Team</h2>
-                <p class="lead text-center text-muted mb-5">"Collaborative Canvas" is brought to life by the dedicated efforts and diverse skills of Jehus Cabalejo, Joshua Cedric Quiro, and Ronnel Basierto.</p>
+                <h2 class="mb-4 fw-bold text-center text-warning">Meet the Dedicated Team Behind Collaborative Canvas</h2>
+                <p class="lead text-muted text-center mb-5">A group of passionate individuals committed to creating innovative solutions for collaboration and learning.</p>
 
-                <div class="row justify-content-center g-4">
-                    <div class="col-md-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center team-member">
                         <img src="jehus-profile.jpg" alt="Jehus Cabalejo" class="img-fluid rounded-circle shadow-sm mb-3">
                         <h4 class="fw-bold text-primary">Jehus Cabalejo</h4>
                         <p class="text-muted small mb-2">Role/Area of Focus</p>
-                        <p class="text-muted">Jehus brings [mention Jehus's key skills or contributions to the project]. His expertise in [mention specific areas of expertise] was instrumental in [mention a specific aspect of the project he significantly contributed to].</p>
+                        <p class="text-muted">Jehus's expertise in [mention Jehus's key skills or contributions] was instrumental in [mention a specific aspect of the project he significantly contributed to]. His background in [mention specific areas of expertise] helped us to [mention a specific achievement or approach].</p>
                         <ul class="list-inline social-links">
                             <li class="list-inline-item"><a href="#" target="_blank" class="text-primary"><i class="bi bi-linkedin"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" class="text-primary"><i class="bi bi-github"></i></a></li>
                         </ul>
                     </div>
 
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4 text-center team-member">
                         <img src="joshua-profile.jpg" alt="Joshua Cedric Quiro" class="img-fluid rounded-circle shadow-sm mb-3">
                         <h4 class="fw-bold text-success">Joshua Cedric Quiro</h4>
                         <p class="text-muted small mb-2">Role/Area of Focus</p>
@@ -79,7 +78,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4 text-center team-member">
                         <img src="ronnel-profile.jpg" alt="Ronnel Basierto" class="img-fluid rounded-circle shadow-sm mb-3">
                         <h4 class="fw-bold text-info">Ronnel Basierto</h4>
                         <p class="text-muted small mb-2">Role/Area of Focus</p>
@@ -90,8 +89,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <p class="text-center mt-4 text-muted">We are a collaborative team passionate about leveraging technology to enhance the learning experience.</p>
             </div>
         </section>
 

@@ -7,20 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="custom.css">
-    <style>
-        /* Minimal custom styles */
-        .hero {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-        }
-        .feature-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-    </style>
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
@@ -40,8 +26,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="approach.html">Approach</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="features.html">Features</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="realtime-collaboration.html">Real-time Collaboration</a></li>
+                            <li><a class="dropdown-item" href="interactive-whiteboard.html">Interactive Whiteboard</a></li>
+                            <li><a class="dropdown-item" href="version-history.html">Version History</a></li>
+                            <li><a class="dropdown-item" href="feedback-tools.html">Feedback Tools</a></li>
+                            <li><a class="dropdown-item" href="features.html">All Features</a></li>
+                        </ul>
                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="team.html">Team</a>
@@ -54,13 +49,13 @@
         </div>
     </nav>
 
-    <div class="container mt-5 py-5">
+    <div class="container mt-5 py-5 feature-page-content">
         <section class="py-5 bg-white">
             <div class="container">
                 <h2 class="text-center mb-4 fw-bold text-primary">Real-time Collaboration</h2>
                 <p class="lead text-muted mb-4">Experience seamless teamwork with Collaborative Canvas's real-time collaboration features. Work together simultaneously, see changes as they happen, and enhance productivity.</p>
 
-                <img src="images/realtime-collaboration.jpg" alt="Real-time Collaboration in Action" class="feature-image img-fluid">
+                <img src="images/realtime-collaboration.jpg" alt="Real-time Collaboration in Action" class="feature-page-image img-fluid">
 
                 <h3 class="h5 fw-bold text-success mb-3">Key Features</h3>
                 <ul>

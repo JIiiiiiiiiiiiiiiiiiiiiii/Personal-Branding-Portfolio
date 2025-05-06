@@ -6,7 +6,7 @@
     <title>Our Approach - Collaborative Canvas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
@@ -26,10 +26,19 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="approach.html">Approach</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="features.html">Features</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="realtime-collaboration.html">Real-time Collaboration</a></li>
+                            <li><a class="dropdown-item" href="interactive-whiteboard.html">Interactive Whiteboard</a></li>
+                            <li><a class="dropdown-item" href="version-history.html">Version History</a></li>
+                            <li><a class="dropdown-item" href="feedback-tools.html">Feedback Tools</a></li>
+                            <li><a class="dropdown-item" href="features.html">All Features</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link" href="team.html">Team</a>
                     </li>
                     <li class="nav-item">
@@ -43,21 +52,57 @@
     <div class="container mt-5 py-5">
         <section class="py-5 bg-white">
             <div class="container">
-                <h2 class="text-center mb-4 text-info fw-bold">Our Approach to Collaborative Canvas</h2>
-                <div class="card shadow-sm border-info p-4">
-                    <p class="text-muted">To address the challenges in modern learning, our team, Jehus Cabalejo, Joshua Cedric Quiro, and Ronnel Basierto, adopted a user-centered and iterative approach in developing "Collaborative Canvas." Our methodology is guided by the principles of <span class="fw-bold text-primary">active learning</span>, <span class="fw-bold text-success">collaborative design</span>, and <span class="fw-bold text-warning">technological innovation</span>. We believe that by focusing on the needs of both learners and educators, we can create a truly effective and engaging platform.</p>
-                    <p class="text-muted mt-3">Our development process involved <span class="fw-bold">initial research and ideation</span>, <span class="fw-bold">user feedback sessions</span>, and <span class="fw-bold">agile development sprints</span>. This iterative cycle allowed us to continuously refine our design and features based on insights and testing.</p>
+                <h2 class="text-center mb-4 fw-bold text-info">Our Solution-Focused Approach</h2>
+                <p class="lead text-muted text-center mb-5">Our approach to building Collaborative Canvas is centered around key principles that ensure an effective and user-friendly experience.</p>
+
+                <div class="approach-section">
+                    <div class="text-center">
+                        <i class="bi bi-people-fill approach-icon"></i>
+                    </div>
+                    <div class="approach-step">
+                        <h4 class="fw-bold">User-Centric Design</h4>
+                        <p>We prioritize the needs and experiences of our users, ensuring an intuitive and accessible platform for everyone.</p>
+                    </div>
                 </div>
 
-                <div class="mt-5">
-                    <h3 class="h5 fw-bold text-dark mb-3"><i class="bi bi-compass-fill text-info me-2"></i> Key Principles Guiding Our Development</h3>
-                    <ul class="list-unstyled text-muted ms-3">
-                        <li class="mb-2"><i class="bi bi-person-fill text-primary me-2"></i> <span class="fw-bold text-primary">User-Centric Design:</span> We placed a strong emphasis on understanding the needs and behaviors of our target users – students and educators – throughout the entire development process. This involved <span class="fst-italic">surveys, interviews, and the creation of user personas</span>.</li>
-                        <li class="mb-2"><i class="bi bi-lightbulb-fill text-success me-2"></i> <span class="fw-bold text-success">Interactive Engagement:</span> Recognizing the importance of active participation in learning, we focused on integrating features that encourage interaction, such as <span class="fst-italic">real-time quizzes, collaborative whiteboards, and gamified elements</span>.</li>
-                        <li class="mb-2"><i class="bi bi-people-fill text-warning me-2"></i> <span class="fw-bold text-warning">Seamless Collaboration:</span> Fostering a collaborative learning environment was a core objective. Our approach includes tools that facilitate group work, peer feedback, and shared learning spaces, like <span class="fst-italic">shared documents, group discussion forums, and peer review tools</span>.</li>
-                        <li class="mb-2"><i class="bi bi-sliders text-danger me-2"></i> <span class="fw-bold text-danger">Flexibility and Adaptability:</span> We aimed to create a platform that can adapt to diverse learning styles and educational contexts. This involves <span class="fst-italic">customizable modules, personalized learning paths, and support for various content formats</span>.</li>
-                        <li class="mb-2"><i class="bi bi-universal-access text-info me-2"></i> <span class="fw-bold text-info">Accessibility and Inclusivity:</span> Ensuring that "Collaborative Canvas" is accessible to all learners, including those with disabilities, was a crucial consideration in our design and development choices. We adhered to <span class="fst-italic">WCAG guidelines and implemented features like screen reader compatibility</span>.</li>
-                    </ul>
+                <div class="approach-section">
+                    <div class="text-center">
+                        <i class="bi bi-lightning-fill approach-icon"></i>
+                    </div>
+                    <div class="approach-step">
+                        <h4 class="fw-bold">Real-time Collaboration at Core</h4>
+                        <p>Our platform is built with seamless, real-time interaction as a fundamental feature, enabling dynamic teamwork.</p>
+                    </div>
+                </div>
+
+                <div class="approach-section">
+                    <div class="text-center">
+                        <i class="bi bi-puzzle-fill approach-icon"></i>
+                    </div>
+                    <div class="approach-step">
+                        <h4 class="fw-bold">Integrated and Unified Tools</h4>
+                        <p>We aim to provide a comprehensive suite of tools within a single platform, reducing the need to switch between multiple applications.</p>
+                    </div>
+                </div>
+
+                <div class="approach-section">
+                    <div class="text-center">
+                        <i class="bi bi-shield-check-fill approach-icon"></i>
+                    </div>
+                    <div class="approach-step">
+                        <h4 class="fw-bold">Scalability and Reliability</h4>
+                        <p>We are building a platform that can handle growing user bases and provide a stable and reliable experience.</p>
+                    </div>
+                </div>
+
+                <div class="approach-section">
+                    <div class="text-center">
+                        <i class="bi bi-gear-fill approach-icon"></i>
+                    </div>
+                    <div class="approach-step">
+                        <h4 class="fw-bold">Iterative Development</h4>
+                        <p>We believe in continuous improvement, gathering feedback and iteratively enhancing Collaborative Canvas based on user needs.</p>
+                    </div>
                 </div>
             </div>
         </section>
