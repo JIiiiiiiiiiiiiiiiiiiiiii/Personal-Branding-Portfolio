@@ -1,149 +1,291 @@
-/* custom.css (Revised - Even Darker Navbar Text) */
-
-/* Import Bootstrap's CSS (not needed if only overriding) */
-/* @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'); */
-
-/* Define your custom primary color and other theme colors */
 :root {
-    --primary: #673ab7; /* Deep Purple */
-    --secondary: #f48fb1; /* Pink 200 */
-    --success: #81c784; /* Green 300 */
-    --danger: #e57373; /* Red 300 */
-    --warning: #ffb74d; /* Amber 400 */
-    --info: #4dd0e1; /* Cyan 300 */
-    --light: #f5f5f5; /* Grey 100 */
-    --dark: #212121; /* Grey 900 */
-  
-    /* A slightly darker shade for the navbar background */
-    --navbar-dark: #333; /* Darker Grey */
-  
-    /* Even darker text color for navbar (closer to black) */
-    --navbar-text: #555; /* Dark Grey */
-  
-    /* Custom font family */
-    --font-family-base: 'Roboto', sans-serif;
-    --font-family-headings: 'Montserrat', sans-serif;
-  }
-  
-  body {
-    font-family: var(--font-family-base);
-    background-color: var(--light);
-    color: var(--dark);
-  }
-  
-  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-family-headings);
-    color: var(--primary);
-  }
-  
-  .navbar {
-    background-color: var(--navbar-dark); /* Use the darker variable */
-  }
-  
-  .navbar-brand {
-    color: var(--light); /* Keep brand text light for contrast */
-    font-weight: 700;
-  }
-  
-  .navbar-nav > .nav-item > .nav-link { /* More specific targeting */
-    color: var(--navbar-text) !important; /* Set default nav link color to a dark grey */
-  }
-  
-  .navbar-nav > .nav-item > .nav-link.active,
-  .navbar-nav > .nav-item > .nav-link:hover {
-    color: var(--secondary) !important; /* Keep hover and active color */
-  }
-  
-  .btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-  }
-  
-  .btn-primary:hover {
-    background-color: #512da8; /* Darker shade of deep purple */
-    border-color: #512da8;
-  }
-  
-  .btn-outline-primary {
-    color: var(--primary);
-    border-color: var(--primary);
-  }
-  
-  .btn-outline-primary:hover {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    color: var(--light);
-  }
-  
-  .hero {
-    background-color: var(--primary);
-  }
-  
-  .hero h1, .hero p {
-    color: var(--light);
-  }
-  
-  .bg-white {
-    background-color: #fff !important; /* Override Bootstrap's specificity */
-  }
-  
-  .bg-light {
-    background-color: var(--light) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .text-primary {
-    color: var(--primary) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .text-success {
-    color: var(--success) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .text-info {
-    color: var(--info) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .text-warning {
-    color: var(--warning) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .text-danger {
-    color: var(--danger) !important; /* Override Bootstrap's specificity */
-  }
-  
-  .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important; /* Maintain shadow */
-  }
-  
-  .card {
-    border-color: #ddd;
-  }
-  
-  .border-primary {
-    border-color: var(--primary) !important;
-  }
-  
-  .border-success {
-    border-color: var(--success) !important;
-  }
-  
-  .border-info {
-    border-color: var(--info) !important;
-  }
-  
-  .border-warning {
-    border-color: var(--warning) !important;
-  }
-  
-  .border-danger {
-    border-color: var(--danger) !important;
-  }
-  
-  .footer {
-    background-color: var(--dark);
-    color: var(--light);
-  }
-  
-  .border-top {
-    border-top: 1px solid #eee !important; /* Adjust border color */
-  }
+  --primary: #673ab7;
+  --secondary: #f48fb1;
+  --success: #81c784;
+  --danger: #e57373;
+  --warning: #ffb74d;
+  --info: #4dd0e1;
+  --light: #f5f5f5;
+  --dark: #212121;
+  --navbar-dark: #333;
+  --navbar-text: #444;
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-headings: 'Montserrat', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1rem;
+  --font-size-lead: 1.2rem;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--light);
+  color: var(--dark);
+  font-size: var(--font-size-base);
+}
+
+h1, .h1 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h1);
+}
+
+h2, .h2 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h2);
+}
+
+h3, .h3 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h3);
+}
+
+h4, .h4 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h4);
+}
+
+h5, .h5 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h5);
+}
+
+h6, .h6 {
+  font-family: var(--font-family-headings);
+  color: var(--primary);
+  font-size: var(--font-size-h6);
+}
+
+.navbar {
+  background-color: var(--navbar-dark);
+}
+
+.navbar-brand {
+  color: var(--light);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  color: var(--navbar-text) !important;
+  font-size: 1.1rem;
+}
+
+.navbar-nav > .nav-item > .nav-link.active,
+.navbar-nav > .nav-item > .nav-link:hover {
+  color: var(--secondary) !important;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: #512da8;
+  border-color: #512da8;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--light);
+}
+
+.hero {
+  background-color: var(--primary);
+}
+
+.hero h1, .hero p {
+  color: var(--light);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-info {
+  color: var(--info) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.card {
+  border-color: #ddd;
+  font-size: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1.05rem;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.border-success {
+  border-color: var(--success) !important;
+}
+
+.border-info {
+  border-color: var(--info) !important;
+}
+
+.border-warning {
+  border-color: var(--warning) !important;
+}
+
+.border-danger {
+  border-color: var(--danger) !important;
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 0.9rem;
+}
+
+.border-top {
+  border-top: 1px solid #eee !important;
+}
+
+.legal-page-content h2 {
+  color: var(--primary);
+  margin-bottom: 1.75rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+}
+
+.legal-page-content h3 {
+  color: var(--info);
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.legal-page-content p {
+  color: var(--dark);
+  line-height: 1.7;
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+
+.legal-page-content ul {
+  padding-left: 1.75rem;
+  margin-bottom: 1.1rem;
+}
+
+.legal-page-content li {
+  color: var(--dark);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.blog-post-content h1 {
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+}
+
+.blog-post-content h2 {
+  color: var(--success);
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.blog-post-content h3 {
+  color: var(--info);
+  margin-top: 1.75rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.4rem;
+}
+
+.blog-post-content p.lead {
+  font-size: var(--font-size-lead);
+  color: var(--dark);
+  margin-bottom: 1.75rem;
+}
+
+.blog-post-content p {
+  color: var(--dark);
+  line-height: 1.8;
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+
+.blog-post-content ul {
+  padding-left: 2rem;
+  margin-bottom: 1.1rem;
+}
+
+.blog-post-content li {
+  color: var(--dark);
+  line-height: 1.8;
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.blog-post-content img {
+  margin-bottom: 1.75rem;
+}
+
+.blog-post-content .mt-5 {
+  margin-top: 3.5rem !important;
+}
+
+.blog-post-content .list-inline-item:not(:last-child) {
+  margin-right: 0.6rem;
+}

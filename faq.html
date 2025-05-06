@@ -38,7 +38,7 @@
                             <li><a class="dropdown-item" href="feedback-tools.html">Feedback Tools</a></li>
                         </ul>
                     </li>
-                     <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="useCasesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Use Cases
                         </a>
@@ -48,7 +48,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             More
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="moreDropdown">
@@ -67,70 +67,82 @@
     </nav>
 
     <div class="container mt-5 py-5 feature-page-content">
-        <section class="py-5 bg-white">
+        <section class="py-5 bg-white rounded shadow-sm">
             <div class="container">
-                <h2 class="text-center mb-4 fw-bold text-primary">Frequently Asked Questions</h2>
-                <p class="lead text-muted text-center mb-4">Find answers to common questions about Collaborative Canvas.</p>
+                <h2 class="text-center mb-4 fw-bold text-primary"><i class="bi bi-question-circle-fill text-primary me-2"></i> Frequently Asked Questions</h2>
+                <p class="lead text-muted text-center mb-4">Have questions? We've got answers to some of the most common inquiries about Collaborative Canvas.</p>
 
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is Collaborative Canvas?
+                                <i class="bi bi-question-octagon-fill text-info me-2"></i> What is Collaborative Canvas?
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Collaborative Canvas is a dynamic online platform designed for real-time collaboration and enhanced learning. It provides a suite of integrated tools, including an interactive whiteboard, real-time editing, version history, and feedback mechanisms, to empower teams and learners to work together seamlessly.
+                                Collaborative Canvas is a powerful online platform designed to facilitate real-time collaboration and enhance learning. It offers a suite of integrated tools, including a dynamic whiteboard, simultaneous editing capabilities, comprehensive version history, and effective feedback mechanisms, enabling teams and learners to work together seamlessly and efficiently.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Is Collaborative Canvas free to use?
+                                <i class="bi bi-cash-coin text-success me-2"></i> Is Collaborative Canvas free to use?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                [Answer about pricing - e.g., We offer different subscription plans, including a free tier with limited features. Please visit our pricing page for more details.]
+                                We offer a range of subscription plans to suit different needs, including a free basic plan with limited features. Our premium plans provide access to advanced functionalities and increased usage limits. Please visit our <a href="pricing.html" class="text-success">pricing page</a> for detailed information on our plans and what they include.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What are the key features of Collaborative Canvas?
+                                <i class="bi bi-gear-fill text-warning me-2"></i> What are the key features of Collaborative Canvas?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Our key features include real-time collaboration, an interactive whiteboard, version history, feedback tools (annotations and discussions), and [mention other key features].
+                                Key features of Collaborative Canvas include:
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="bi bi-ethernet text-warning me-2"></i> Real-time collaborative editing</li>
+                                    <li><i class="bi bi-brush-fill text-warning me-2"></i> Interactive whiteboard with various tools</li>
+                                    <li><i class="bi bi-clock-history text-warning me-2"></i> Comprehensive version history with rollback capabilities</li>
+                                    <li><i class="bi bi-chat-left-text-fill text-warning me-2"></i> Integrated feedback tools (annotations, comments, discussions)</li>
+                                    <li><i class="bi bi-upload text-warning me-2"></i> Versatile file uploading (images, documents, presentations)</li>
+                                    <li><i class="bi bi-people-fill text-warning me-2"></i> Secure user and permission management</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    { /* Add more FAQ items here */ }
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Can multiple people work on the same canvas at the same time?
+                                <i class="bi bi-person-check-fill text-primary me-2"></i> Can multiple people work on the same canvas simultaneously?
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                Yes, Collaborative Canvas is designed for real-time collaboration, allowing multiple users to work on the same canvas simultaneously. You can see each other's changes as they happen.
+                                Absolutely! Collaborative Canvas is built for real-time teamwork. Multiple users can access and work on the same canvas at the exact same time, seeing each other's contributions as they happen. This fosters dynamic and efficient collaboration.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What kind of files can I upload to the whiteboard?
+                                <i class="bi bi-file-earmark-arrow-up-fill text-info me-2"></i> What kind of files can I upload to the whiteboard?
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                             <div class="accordion-body text-muted">
-                                You can upload various file types, including images (JPEG, PNG, GIF), documents (PDF, DOC, DOCX), and presentations (PPT, PPTX). [Mention other supported file types if applicable].
+                                You can upload a wide range of file types to enhance your collaborative sessions, including:
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="bi bi-image-fill text-info me-2"></i> Images: JPEG, PNG, GIF</li>
+                                    <li><i class="bi bi-file-earmark-text-fill text-info me-2"></i> Documents: PDF, DOC, DOCX</li>
+                                    <li><i class="bi bi-file-earmark-ppt-fill text-info me-2"></i> Presentations: PPT, PPTX</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
