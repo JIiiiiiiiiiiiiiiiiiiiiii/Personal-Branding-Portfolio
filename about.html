@@ -1,93 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Alex's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    :root {
-      --fs-heading: clamp(1.5rem, 5vw, 3rem);
-      --fs-subheading: clamp(1rem, 4vw, 2rem);
-      --fs-body: clamp(0.9rem, 3vw, 1.2rem);
-      --primary-color: #007bff;
-      --secondary-color: #6c757d;
-    }
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-    }
-    h1 { 
-      font-size: var(--fs-heading); 
-    }
-    h2 { 
-      font-size: var(--fs-subheading); }
-    p, a { font-size: var(--fs-body); }
-    html, body {
-      height: 100%;
-    }
-    .navbar, footer {
-      background-color: var(--primary-color);
-    }
-    .navbar a {
-      color: white;
-    }
-    .navbar a:hover {
-      color: #f8f9fa;
-    }
-    .footer-text {
-      color: white;
-      font-size: var(--fs-body);
-    }
-    .fab {
-      font-size: 3rem;
-    }
-    .fab:hover {
-      color: #f8f9fa;
-    }
-    .bg-primary { background-color: var(--primary-color) !important; }
-    .text-white { color: white !important; }
-    .flex-grow-1 { flex-grow: 1; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Collaborative Canvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
-<body class="d-flex flex-column vh-100">
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="index.html">Collaborative Canvas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="problem.html">Problem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="approach.html">Approach</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+                            <li><a class="dropdown-item" href="realtime-collaboration.html">Real-time Collaboration</a></li>
+                            <li><a class="dropdown-item" href="interactive-whiteboard.html">Interactive Whiteboard</a></li>
+                            <li><a class="dropdown-item" href="version-history.html">Version History</a></li>
+                            <li><a class="dropdown-item" href="feedback-tools.html">Feedback Tools</a></li>
+                            <li><a class="dropdown-item" href="features.html">All Features</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="useCasesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Use Cases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="useCasesDropdown">
+                            <li><a class="dropdown-item" href="for-education.html">For Education</a></li>
+                            <li><a class="dropdown-item" href="for-business.html">For Business</a></li>
+                            { /* Add more use cases here */ }
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Alex's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <div class="container mt-5 py-5 feature-page-content">
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-bold text-info">Our Story and Mission</h2>
+                <p class="lead text-muted text-center mb-4">Collaborative Canvas was born from a shared vision to create a seamless and intuitive platform that empowers individuals and teams to collaborate effectively and learn together, regardless of location.</p>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="h5 fw-bold text-primary mb-3">Our Journey</h3>
+                        <p class="text-muted">It all started when Jehus, Joshua, and Ronnel, during their collaborative projects, experienced firsthand the frustrations of using disjointed tools and the challenges of real-time teamwork. Recognizing the need for a unified solution, they embarked on a journey to build Collaborative Canvas – a platform that puts collaboration at its core.</p>
+                        <p class="text-muted">Driven by a passion for technology and a belief in the power of collaborative learning, the team dedicated countless hours to design, develop, and refine the platform. Their diverse skills in [mention areas like web development, UI/UX design, etc.] complemented each other, leading to a holistic and user-centric approach.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="h5 fw-bold text-success mb-3">Our Mission</h3>
+                        <p class="text-muted">Our mission is to empower learners and teams through seamless collaboration and innovative tools. We strive to:</p>
+                        <ul class="list-unstyled text-muted">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Provide a unified platform that integrates essential collaboration features.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Foster real-time interaction and dynamic teamwork.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Enhance productivity and streamline workflows.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Create an intuitive and accessible experience for all users.</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Continuously innovate and improve based on user feedback.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h3 class="h5 fw-bold text-warning mb-3">Our Values</h3>
+                    <p class="text-muted">At Collaborative Canvas, we are guided by the following core values:</p>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-heart-fill text-danger me-2"></i> <strong>User-Centricity:</strong> We prioritize the needs and experiences of our users in every decision we make.</li>
+                        <li><i class="bi bi-lightbulb-fill text-info me-2"></i> <strong>Innovation:</strong> We are committed to pushing the boundaries of technology to create cutting-edge collaboration tools.</li>
+                        <li><i class="bi bi-people-fill text-primary me-2"></i> <strong>Collaboration:</strong> We believe in the power of teamwork and strive to build a platform that fosters it.</li>
+                        <li><i class="bi bi-shield-fill-check text-success me-2"></i> <strong>Integrity:</strong> We are committed to transparency, honesty, and ethical practices.</li>
+                        <li><i class="bi bi-arrow-repeat text-warning me-2"></i> <strong>Continuous Improvement:</strong> We embrace feedback and are dedicated to constantly evolving and enhancing our platform.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-4 bg-light text-center border-top mt-5">
+            <div class="container">
+                <p class="text-muted small">© 2025 Collaborative Canvas | Developed by Jehus Cabalejo, Joshua Cedric Quiro, Ronnel Basierto</p>
+            </div>
+        </footer>
     </div>
-  </nav>
 
-  <header class="d-flex flex-column justify-content-center align-items-center bg-secondary text-white vh-100">
-    <div class="container text-center">
-      <h1 class="fw-bold">About Me</h1>
-      <p class="lead">I am a passionate web developer with a love for creating user-centric designs and building intuitive websites.</p>
-    </div>
-  </header>
-
-  <section class="bg-light py-5 flex-grow-1">
-    <div class="container text-center">
-      <h2>My Journey</h2>
-      <p>I have been working in web development for over 5 years and have experience in building dynamic and responsive websites for clients across the globe.</p>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white py-3 text-center">
-    <small class="footer-text">&copy; 2025 Alex's Portfolio. All rights reserved.</small>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
